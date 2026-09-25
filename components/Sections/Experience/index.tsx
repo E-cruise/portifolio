@@ -16,17 +16,13 @@ const DetailSection = () => (
       Places i’ve worked.
     </Heading>
     <Text variant="description">
-      Since 2022,I have had a privilege to work with several companies that have
-      enabled me to hone my skills and talents. These companies will always have
-      a special place in my heart. Currently I am working with{' '}
-      <Link
-        href="https://JvanderVlistHoldingB.V.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        J van der Vlist Holding B.V
-      </Link>
-      .
+      Since 2022, I have had the privilege to work with several companies that
+      have enabled me to hone my skills and talents. These companies will always
+      have a special place in my heart. Currently I am working with{' '}
+      <Link href="https://www.busitema.ac.ug/" target="_blank" rel="noreferrer">
+        Busitema University
+      </Link>{' '}
+      as a Graduate Fellow.
     </Text>
 
     <ExperienceTab />

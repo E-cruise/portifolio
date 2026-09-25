@@ -129,7 +129,7 @@ const Navigation = () => {
               padding={2}
               marginX={2}
               as="a"
-              href={isMobile ? '#aboutMe' : '#'}
+              href="#aboutMe"
               rel="noreferrer"
               onClick={onMenuItemClick}
             >

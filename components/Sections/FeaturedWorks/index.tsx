@@ -47,7 +47,7 @@ const FeaturedWorksSection = () => {
             title="CTN Pastor Training!"
             src="/works/ctn2.png"
             description="CTN Pastor Training is a website for coordinating Pastoral mission work of different Pastor training
-            Missonary orgainisation in Uganda, Ethiopia, Kenya.."
+            Missionary organisations in Uganda, Ethiopia, Kenya."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://ctnpastortraining.org/"
             objectPosition="right 20%"
@@ -59,8 +59,8 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={2}
             title="Nile Centre Business Support"
-            description="I designed in NCBS website  which ensures potraying of what NCBS
-            does : Training Remote workers"
+            description="I designed the NCBS website which ensures portraying of what NCBS
+            does: Training Remote workers"
             src="/works/ncbs.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://ncbs.io"
@@ -86,7 +86,7 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={4}
             title="Bonaire Weather"
-            description="A weather forcasting website with automatic post using OpenWeather API, Robomotion RPA, ReplicateAI. "
+            description="A weather forecasting website with automatic post using OpenWeather API, Robomotion RPA, ReplicateAI."
             src="/works/weather.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://www.stijlvoldesign.nl/forecast/day-2/"

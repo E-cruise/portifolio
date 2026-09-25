@@ -1,12 +1,19 @@
 import { Link } from '@chakra-ui/react'
 
-export type Company = 'Deloitte' | 'NCBS' | 'Logos' | 'Fundi'
+export type Company =
+  | 'Busitema'
+  | 'Kanzu'
+  | 'Flowspark'
+  | 'Dreamr'
+  | 'NCBS'
+  | 'Logos'
+  | 'Fundi'
 
 export type CompanyDetail = {
   name: string
   longName: string
   subDetail?: string
-  url: string
+  url?: string
   position: string
   duration: string
   logo: {
@@ -19,43 +26,133 @@ export type CompanyDetail = {
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
-  Deloitte: {
-    name: ' J van der Vlist Holding B.V ',
-    longName: ' J van der Vlist Holding B.V ',
-    subDetail: 'RPA Developer. Robomotion',
-    url: 'https://www2.JvanderVlistHoldingB.V.com/',
-    position: 'RPA Engineer',
-    duration: 'Jan 2024 - Present',
+  Busitema: {
+    name: 'Busitema University',
+    longName: 'Busitema University, Faculty of Engineering',
+    subDetail: 'Faculty of Engineering',
+    url: 'https://www.busitema.ac.ug/',
+    position: 'Graduate Fellow (Lecturer)',
+    duration: 'Oct 2025 - Present',
     logo: {
-      light: '/worked_at_logos/robomotion/rpa.webp',
-      dark: '/worked_at_logos/robomotion/rpa.webp',
+      light: '/worked_at_logos/busitema/busitema.png',
+      dark: '/worked_at_logos/busitema/busitema.png',
     },
     roles: [
       <>
-        Contributed to the design and development of a Robotic Process
-        Automation flows using Robomotion tools
-      </>,
-      <>Webscraping and databbase Update for real Estates in Bonaire.</>,
-      <>
-        Integration of APIs for data fetching of weather forecast in the Bonaire
-        region. Integration of OpenAI and image generation API for
-        Auto-generation of website content and images.
+        Lecture undergraduate course units in Database Systems, Database
+        Management Systems, Operating Systems, Microprocessors &amp;
+        Interfacing, and Electricity and Magnetism.
       </>,
       <>
-        Configuring of the Robomotion SEO writer Application for SEO content
-        generation
-        <Link
-          aria-label="Deloitte Digital AU"
-          href="https://www.robomotion.io/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          SEO writer Application
-        </Link>
+        Run lab sessions on SQL queries, database design, and the basics of
+        operating systems and systems programming.
       </>,
       <>
-        Undergone training for advanced Automation and Remote work, API and AI
-        integration and different applications of RPA to enhance businesses.
+        Supervise final-year projects and research, reviewing student code and
+        technical write-ups.
+      </>,
+      <>
+        Write lecture notes, practical materials and assessments, and set,
+        invigilate and mark coursework and exams.
+      </>,
+      <>
+        Take part in curriculum review, academic advising and quality assurance,
+        and help build online course materials for the Faculty of Engineering
+        and Technology.
+      </>,
+    ],
+  },
+  Kanzu: {
+    name: 'Kanzu Finance Limited',
+    longName: 'Kanzu Finance Limited',
+    subDetail: 'Consultant, Kampala',
+    position: 'Automation Engineer (Consultant)',
+    duration: 'June 2025 - November 2025',
+    logo: {
+      light: '/worked_at_logos/kanzu/kanzu.png',
+      dark: '/worked_at_logos/kanzu/kanzu.png',
+    },
+    roles: [
+      <>
+        Built and documented automated workflows for the sales, engineering, HR,
+        operations and finance teams.
+      </>,
+      <>
+        Connected internal systems to outside business platforms through their
+        APIs.
+      </>,
+      <>
+        Built dashboards and reports so management could see how operations were
+        running.
+      </>,
+      <>
+        Carried out web development and platform integration work, and helped
+        improve system performance and security.
+      </>,
+      <>Wrote the documentation and trained staff on the systems delivered.</>,
+    ],
+  },
+  Flowspark: {
+    name: 'Flowspark',
+    longName: 'Flowspark, Netherlands',
+    subDetail: 'via Remote',
+    url: 'https://flowspark.dev/company/',
+    position: 'Automation Engineer',
+    duration: 'Dec 2024 - Oct 2025',
+    logo: {
+      light: '/worked_at_logos/flowspark/flowspark.png',
+      dark: '/worked_at_logos/flowspark/flowspark.png',
+    },
+    roles: [
+      <>
+        Built web applications with Next.js and JavaScript, using edge functions
+        for triggers and PostgreSQL for data storage.
+      </>,
+      <>
+        Built workflow automations with Zapier, Make.com, Airtable and n8n that
+        cut down manual work for clients in several industries.
+      </>,
+      <>
+        Connected separate business platforms through their APIs and kept data
+        in sync between them.
+      </>,
+      <>
+        Designed and looked after the databases behind these workflows, from
+        schema design through to queries and ongoing maintenance.
+      </>,
+      <>
+        Brought AI tools into client workflows to handle steps that were
+        previously done by hand.
+      </>,
+      <>Wrote up each solution and trained the client team before handover.</>,
+    ],
+  },
+  Dreamr: {
+    name: 'Dreamr Digital Agency',
+    longName: 'Dreamr Digital Agency, Moordrecht',
+    subDetail: 'via Remote',
+    position: 'RPA Expert',
+    duration: 'Jan 2024 - Oct 2025',
+    logo: {
+      light: '/worked_at_logos/dreamr/dreamr.png',
+      dark: '/worked_at_logos/dreamr/dreamr.png',
+    },
+    roles: [
+      <>
+        Built robotic process automation systems that pull data from web
+        platforms, process it and store it.
+      </>,
+      <>
+        Wrote web scraping and browser automation routines, feeding what they
+        collected into databases and APIs.
+      </>,
+      <>
+        Fixed and tuned existing automations so they ran faster and broke less
+        often.
+      </>,
+      <>
+        Kept documentation up to date covering how each automation was built,
+        configured and fixed.
       </>,
     ],
   },
@@ -65,15 +162,15 @@ export const Experiences: {
     subDetail: 'via Remote',
     url: 'https://ncbs.io/',
     position: 'IT Support Officer',
-    duration: 'Dec 2023 - Present',
+    duration: 'Dec 2023 - Oct 2025',
     logo: {
       light: '/worked_at_logos/ncbs/ncbs_white.png',
       dark: '/worked_at_logos/ncbs/ncbs-dark.png',
     },
     roles: [
       <>
-        Trainship for Remote work {''}
-        Providing IT support Development of the company website.
+        Traineeship for Remote work, providing IT support and development of the
+        company website.
       </>,
       <>
         Joined different course for soft skills, Problem solving and critical
@@ -160,7 +257,10 @@ export const Experiences: {
 }
 
 export const ExperiencesList = [
-  Experiences.Deloitte,
+  Experiences.Busitema,
+  Experiences.Kanzu,
+  Experiences.Flowspark,
+  Experiences.Dreamr,
   Experiences.NCBS,
   Experiences.Logos,
   Experiences.Fundi,

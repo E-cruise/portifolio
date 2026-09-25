@@ -98,16 +98,21 @@ const ExperienceTab = () => {
                   {company.position}
                 </Text>
                 <Text as="span">
-                  <Link
-                    href={company.url}
-                    aria-label="scentregroup"
-                    rel="noreferrer"
-                    target="_blank"
-                    fontSize="lg"
-                    fontWeight="bold"
-                  >
-                    #{company.name}
-                  </Link>
+                  {company.url ? (
+                    <Link
+                      href={company.url}
+                      rel="noreferrer"
+                      target="_blank"
+                      fontSize="lg"
+                      fontWeight="bold"
+                    >
+                      #{company.name}
+                    </Link>
+                  ) : (
+                    <Text as="span" fontSize="lg" fontWeight="bold">
+                      #{company.name}
+                    </Text>
+                  )}
                   <Text
                     as="span"
                     textTransform="none"

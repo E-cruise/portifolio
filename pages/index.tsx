@@ -7,7 +7,6 @@ import {
 } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import Script from 'next/script'
-import blogs from '../public/blogs/index'
 import OpenGraphHead from 'components/Misc/OpenGraphHead'
 import FadeInLayout from 'components/Layout/FadeWhenVisible'
 import Menu from 'components/Menu'
@@ -16,12 +15,11 @@ import About from 'components/Sections/About'
 import Experience from 'components/Sections/Experience'
 import FeaturedWorks from 'components/Sections/FeaturedWorks'
 import ScrollMore from 'components/Misc/ScrollMore'
-import { Article } from 'types/article'
 
 // Dynamically import GetInTouch component
 const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'))
 
-const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
+const Portfolio = (): JSX.Element => {
   // Define responsive padding values
   const sideBarPadding = useBreakpointValue({ base: '5', md: '8', lg: '14' })
   const mainContentPadding = useBreakpointValue({
@@ -149,18 +147,6 @@ const Portfolio = ({}: { articles: Article[] }): JSX.Element => {
       <ScrollMore />
     </>
   )
-}
-
-// Static props
-export async function getStaticProps() {
-  // const res = await fetch('https://dev.to/api/articles?username=klawingco')
-  // const articles = await res.json()
-  const articles = blogs
-  return {
-    props: {
-      articles,
-    },
-  }
 }
 
 export default Portfolio

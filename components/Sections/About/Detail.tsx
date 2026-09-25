@@ -58,7 +58,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <Text variant="description">
         I&apos;ve been coding professionally for {professionalYears} years now
         and currently working as a <b>Robotic Process Automation Expert</b> that
-        focuses on <b>automating business processes</b>, <b>like</b>,{' '}
+        focuses on <b>automating business processes</b>, <b>like</b>{' '}
         <Tooltip
           label="Ha!. Or more accurately TECH DEBT"
           aria-label="Tech Debt?"

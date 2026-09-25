@@ -29,10 +29,10 @@ const GetInTouch = () => {
     }
     emailjs
       .sendForm(
-        'service_e2po6ur',
-        'template_rzbuidn',
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
         form.current,
-        'R5M3kGVatDHsUH16x'
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
       )
       .then(
         (result) => {

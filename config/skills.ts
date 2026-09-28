@@ -20,14 +20,13 @@ import {
   SiMui,
   SiFramer,
   SiChakraui,
-  SiVisualstudiocode,
   SiGit,
   SiAsana,
   SiUnity,
   SiElectron,
-  SiMicrosoft,
 } from 'react-icons/si'
-import { FaJava } from 'react-icons/fa'
+import { FaJava, FaMicrosoft } from 'react-icons/fa'
+import { VscVscode } from 'react-icons/vsc'
 
 export type SkillCategory =
   | 'backend'
@@ -89,7 +88,7 @@ export const Skills: Record<SkillCategory, Skill[]> = {
     { name: 'ChakraUI', icon: SiChakraui },
   ],
   productivity: [
-    { name: 'VSCode', icon: SiVisualstudiocode },
+    { name: 'VSCode', icon: VscVscode },
     { name: 'Git', icon: SiGit },
     { name: 'Asana', icon: SiAsana },
   ],
@@ -99,7 +98,7 @@ export const Skills: Record<SkillCategory, Skill[]> = {
   ],
   games: [{ name: 'Unity3D', icon: SiUnity }],
   desktop: [
-    { name: 'Windows Forms, WPF', icon: SiMicrosoft },
+    { name: 'Windows Forms, WPF', icon: FaMicrosoft },
     { name: 'Electron', icon: SiElectron },
   ],
 }

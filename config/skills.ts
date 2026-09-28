@@ -3,41 +3,33 @@ import {
   SiNodedotjs,
   SiJavascript,
   SiTypescript,
-  SiGraphql,
+  SiPython,
   SiPhp,
   SiReact,
   SiNextdotjs,
-  SiAngular,
-  SiRedux,
-  SiVuedotjs,
   SiPostgresql,
   SiMysql,
   SiMongodb,
   SiArduino,
   SiC,
   SiRaspberrypi,
-  SiStyledcomponents,
-  SiMui,
-  SiFramer,
-  SiChakraui,
+  SiZapier,
+  SiAirtable,
+  SiWordpress,
   SiGit,
-  SiAsana,
-  SiUnity,
-  SiElectron,
+  SiN8N,
 } from 'react-icons/si'
-import { FaJava, FaMicrosoft } from 'react-icons/fa'
+import { FaJava, FaRobot } from 'react-icons/fa'
 import { VscVscode } from 'react-icons/vsc'
 
 export type SkillCategory =
-  | 'backend'
-  | 'frontend'
+  | 'automation'
+  | 'webDev'
+  | 'languages'
   | 'database'
   | 'embedded'
-  | 'uiFrameworks'
   | 'productivity'
   | 'mobile'
-  | 'games'
-  | 'desktop'
 
 export type Skill = {
   name: string
@@ -45,74 +37,63 @@ export type Skill = {
 }
 
 export const SkillCategoryLabels: Record<SkillCategory, string> = {
-  backend: 'Backend Centric',
-  frontend: 'Frontend Centric',
-  database: 'Database & Streams',
-  embedded: 'Embedded Systems',
-  uiFrameworks: 'UI Frameworks',
-  productivity: 'Productivity Boosts',
+  automation: 'Automation & RPA',
+  webDev: 'Web Development',
+  languages: 'Programming Languages',
+  database: 'Database Management',
+  embedded: 'Embedded Systems & IoT',
+  productivity: 'Productivity & Tools',
   mobile: 'Mobile Development',
-  games: 'Games',
-  desktop: 'Desktop Development',
 }
 
 export const Skills: Record<SkillCategory, Skill[]> = {
-  backend: [
-    { name: 'Node', icon: SiNodedotjs },
-    { name: 'Javascript (ES6+)', icon: SiJavascript },
-    { name: 'Typescript', icon: SiTypescript },
-    { name: 'Graphql (JS, C#)', icon: SiGraphql },
-    { name: 'PHP (Wordpress)', icon: SiPhp },
+  automation: [
+    { name: 'Zapier', icon: SiZapier },
+    { name: 'n8n', icon: SiN8N },
+    { name: 'Make.com', icon: FaRobot },
+    { name: 'Airtable', icon: SiAirtable },
+    { name: 'Robomotion', icon: FaRobot },
   ],
-  frontend: [
+  webDev: [
     { name: 'React', icon: SiReact },
-    { name: 'NextJS', icon: SiNextdotjs },
-    { name: 'Angular', icon: SiAngular },
-    { name: 'Redux', icon: SiRedux },
-    { name: 'VueJS', icon: SiVuedotjs },
+    { name: 'Next.js', icon: SiNextdotjs },
+    { name: 'Node.js', icon: SiNodedotjs },
+    { name: 'WordPress', icon: SiWordpress },
+  ],
+  languages: [
+    { name: 'JavaScript', icon: SiJavascript },
+    { name: 'TypeScript', icon: SiTypescript },
+    { name: 'Python', icon: SiPython },
+    { name: 'C', icon: SiC },
+    { name: 'Java', icon: FaJava },
+    { name: 'PHP', icon: SiPhp },
   ],
   database: [
-    { name: 'PostgreSQL', icon: SiPostgresql },
     { name: 'MySQL', icon: SiMysql },
-    { name: 'MongoDb', icon: SiMongodb },
+    { name: 'PostgreSQL', icon: SiPostgresql },
+    { name: 'MongoDB', icon: SiMongodb },
   ],
   embedded: [
     { name: 'Arduino', icon: SiArduino },
-    { name: 'C', icon: SiC },
-    { name: 'Raspberry PI', icon: SiRaspberrypi },
-  ],
-  uiFrameworks: [
-    { name: 'Styled Components', icon: SiStyledcomponents },
-    { name: 'MaterialUI', icon: SiMui },
-    { name: 'Framer Motion', icon: SiFramer },
-    { name: 'ChakraUI', icon: SiChakraui },
+    { name: 'Raspberry Pi', icon: SiRaspberrypi },
   ],
   productivity: [
-    { name: 'VSCode', icon: VscVscode },
     { name: 'Git', icon: SiGit },
-    { name: 'Asana', icon: SiAsana },
+    { name: 'VS Code', icon: VscVscode },
   ],
   mobile: [
     { name: 'React Native', icon: SiReact },
-    { name: 'Java', icon: FaJava },
-  ],
-  games: [{ name: 'Unity3D', icon: SiUnity }],
-  desktop: [
-    { name: 'Windows Forms, WPF', icon: FaMicrosoft },
-    { name: 'Electron', icon: SiElectron },
   ],
 }
 
 export const SkillCategoryOrder: SkillCategory[] = [
-  'backend',
-  'frontend',
+  'automation',
+  'webDev',
+  'languages',
   'database',
   'embedded',
-  'uiFrameworks',
   'mobile',
   'productivity',
-  'games',
-  'desktop',
 ]
 
 export function splitSkills<T>(items: T[], columns = 2): T[][] {

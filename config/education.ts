@@ -10,7 +10,7 @@ export const Education: EducationEntry[] = [
   {
     degree: 'Master of Science in Cyber-Physical Systems Engineering',
     institute: 'Busitema University',
-    duration: '2026 - 2028',
+    duration: '2026 - Present',
   },
   {
     degree: 'Bachelor of Science in Computer Engineering',

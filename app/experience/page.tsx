@@ -32,6 +32,7 @@ export default function ExperiencePage() {
                   name={company.name}
                   light={company.logo.light}
                   dark={company.logo.dark}
+                  variant="circle"
                 />
                 <div>
                   <h3 className="text-lg font-semibold">

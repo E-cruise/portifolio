@@ -50,8 +50,8 @@ export const Experiences: {
     position: 'Automation Engineer (Consultant)',
     duration: 'June 2025 - November 2025',
     logo: {
-      light: '/worked_at_logos/kanzu/kanzu.png',
-      dark: '/worked_at_logos/kanzu/kanzu.png',
+      light: '/worked_at_logos/kanzu/kanzu.jpg',
+      dark: '/worked_at_logos/kanzu/kanzu.jpg',
     },
     roles: [
       'Built and documented automated workflows for the sales, engineering, HR, operations and finance teams.',
@@ -69,8 +69,8 @@ export const Experiences: {
     position: 'Automation Engineer',
     duration: 'Dec 2024 - Oct 2025',
     logo: {
-      light: '/worked_at_logos/flowspark/flowspark.png',
-      dark: '/worked_at_logos/flowspark/flowspark.png',
+      light: '/worked_at_logos/flowspark/flowspark.svg',
+      dark: '/worked_at_logos/flowspark/flowspark.svg',
     },
     roles: [
       'Built web applications with Next.js and JavaScript, using edge functions for triggers and PostgreSQL for data storage.',
@@ -88,8 +88,8 @@ export const Experiences: {
     position: 'RPA Expert',
     duration: 'Jan 2024 - Oct 2025',
     logo: {
-      light: '/worked_at_logos/dreamr/dreamr.png',
-      dark: '/worked_at_logos/dreamr/dreamr.png',
+      light: '/worked_at_logos/robomotion/rpa.webp',
+      dark: '/worked_at_logos/robomotion/rpa.webp',
     },
     roles: [
       'Built robotic process automation systems that pull data from web platforms, process it and store it.',

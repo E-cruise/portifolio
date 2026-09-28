@@ -29,7 +29,7 @@ export type SocialLink = {
 export const SocialLinks: SocialLink[] = [
   {
     label: 'Github',
-    href: 'https://github.com/okello-eric-denis',
+    href: 'https://github.com/e-cruise',
     icon: FaGithub,
   },
   {

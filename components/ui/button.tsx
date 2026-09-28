@@ -11,7 +11,7 @@ const base =
   'inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-medium transition-colors duration-200'
 
 const variants = {
-  solid: 'bg-[var(--color-accent)] text-[#0a0a0a] hover:opacity-90',
+  solid: 'bg-[var(--color-accent)] text-[#0c0c0f] hover:opacity-90',
   outline:
     'border border-[var(--color-border)] text-[var(--color-fg)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]',
 }

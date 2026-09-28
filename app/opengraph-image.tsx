@@ -15,18 +15,18 @@ export default function OpengraphImage() {
           flexDirection: 'column',
           justifyContent: 'center',
           padding: 96,
-          background: '#0a0a0a',
-          color: '#ededed',
+          background: '#0c0c0f',
+          color: '#ececef',
           fontFamily: 'sans-serif',
         }}
       >
-        <span style={{ color: '#67e8f9', fontSize: 28, letterSpacing: 4 }}>
+        <span style={{ color: '#2dd4bf', fontSize: 28, letterSpacing: 4 }}>
           {Person.alias.toUpperCase()}
         </span>
         <span style={{ fontSize: 72, fontWeight: 700, marginTop: 24 }}>
           {Person.name}
         </span>
-        <span style={{ fontSize: 32, color: '#9a9a9a', marginTop: 16 }}>
+        <span style={{ fontSize: 32, color: '#8b8b9a', marginTop: 16 }}>
           {Person.role} &middot; {Person.tagline}
         </span>
       </div>

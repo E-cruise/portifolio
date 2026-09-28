@@ -49,9 +49,9 @@ export function Nav() {
           <Image
             src={logoSrc}
             alt="OE"
-            width={48}
-            height={48}
-            className="h-12 w-12"
+            width={56}
+            height={56}
+            className="h-14 w-14"
             unoptimized
           />
         </Link>

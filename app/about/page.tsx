@@ -1,5 +1,13 @@
 import type { Metadata } from 'next'
-import { FiMapPin, FiBriefcase, FiBook, FiCpu } from 'react-icons/fi'
+import {
+  FiMapPin,
+  FiBriefcase,
+  FiBook,
+  FiCpu,
+  FiShield,
+  FiWifi,
+  FiLayers,
+} from 'react-icons/fi'
 import { Container } from '@/components/ui/container'
 import { SectionHeading } from '@/components/ui/section-heading'
 import { Card } from '@/components/ui/card'
@@ -54,18 +62,18 @@ export default function AboutPage() {
             <p>
               I am a computer engineer specialising in embedded systems and
               process automation. My work sits at the intersection of hardware
-              and software — from programming microcontrollers and sensor
-              networks with Arduino and Raspberry Pi, to designing end-to-end
+              and software, from programming microcontrollers and sensor
+              networks with Arduino and Raspberry Pi to designing end-to-end
               RPA workflows with Zapier, n8n and Make.com that eliminate
               repetitive manual work.
             </p>
             <p>
               I also build full-stack web applications with Next.js and
               Node.js, and manage the databases that keep everything connected.
-              As a Graduate Fellow at Busitema University I lecture courses in
-              database systems, operating systems, microprocessors and embedded
-              programming — bringing real-world engineering practice into the
-              classroom.
+              As a Graduate Fellow (Lecturer) at Busitema University I lecture
+              courses in database systems, operating systems, microprocessors
+              and embedded programming, bringing real-world engineering
+              practice into the classroom.
             </p>
             <p>
               Whether I am wiring up a circuit, writing an API integration or
@@ -145,6 +153,61 @@ export default function AboutPage() {
                   ))}
                 </ul>
               )}
+            </Card>
+          ))}
+        </div>
+      </FadeIn>
+
+      <FadeIn className="flex flex-col gap-6">
+        <div>
+          <span className="font-mono text-sm uppercase tracking-widest text-[var(--color-accent)]">
+            Research
+          </span>
+          <h2
+            className="mt-2 text-2xl font-semibold tracking-tight"
+            style={{ fontVariantCaps: 'small-caps' }}
+          >
+            Research interests
+          </h2>
+        </div>
+        <div className="grid gap-5 sm:grid-cols-2">
+          {[
+            {
+              icon: FiShield,
+              title: 'Embedded Systems for Road Safety',
+              description:
+                'Designing sensor-based systems for real-time hazard detection, speed monitoring and driver alertness using microcontrollers and IoT to reduce road accidents in East Africa.',
+            },
+            {
+              icon: FiLayers,
+              title: 'Cyber-Physical Systems',
+              description:
+                'Modelling and building tightly coupled computational and physical systems, where software control loops interact directly with hardware sensors and actuators in real time.',
+            },
+            {
+              icon: FiCpu,
+              title: 'Hardware Programming & Firmware',
+              description:
+                'Low-level firmware development for microcontrollers (ARM, AVR), peripheral interfacing, and rapid prototyping of embedded hardware solutions.',
+            },
+            {
+              icon: FiWifi,
+              title: 'IoT & Wireless Sensor Networks',
+              description:
+                'Networked embedded devices for environmental monitoring, smart infrastructure and data acquisition, from sensor node design to cloud-connected dashboards.',
+            },
+          ].map((area) => (
+            <Card key={area.title} className="flex flex-col gap-3 p-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-accent)]/10">
+                <area.icon
+                  size={20}
+                  className="text-[var(--color-accent)]"
+                />
+              </div>
+              <h3 className="text-base font-semibold">{area.title}</h3>
+              <p className="text-sm leading-relaxed text-[var(--color-fg-muted)]">
+                {area.description}
+              </p>
             </Card>
           ))}
         </div>

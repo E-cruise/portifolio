@@ -43,7 +43,7 @@ const stats = [
     value: `${new Date().getFullYear() - 2020}+`,
     accent: true,
   },
-  { label: 'Current Role', value: 'Lecturer & Fellow', accent: false },
+  { label: 'Current Role', value: 'Graduate Fellow (Lecturer)', accent: false },
   { label: 'Primary Focus', value: 'Embedded & Automation', accent: false },
   { label: 'Based In', value: 'Njeru, Uganda', accent: false },
 ]

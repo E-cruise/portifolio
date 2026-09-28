@@ -9,9 +9,9 @@ export const Person = {
   alias: 'E_Cruise',
   role: 'Computer Engineer & Tutor',
   tagline:
-    'I design embedded systems and build automation workflows that bridge hardware, software and data — then teach others how to do the same.',
+    'I design embedded systems and build automation workflows that bridge hardware, software and data, then teach others how to do the same.',
   summary:
-    'I am a computer engineer specialising in embedded systems and process automation. My work sits at the intersection of hardware and software — from programming microcontrollers and sensor networks with Arduino and Raspberry Pi, to designing end-to-end RPA workflows with Zapier, n8n and Make.com that eliminate repetitive manual work. I also build full-stack web applications with Next.js and Node.js, and manage the databases that keep everything connected. As a Graduate Fellow at Busitema University I lecture courses in database systems, operating systems, microprocessors and embedded programming — bringing real-world engineering practice into the classroom. Whether I am wiring up a circuit, writing an API integration or walking students through a lab session, the goal is the same: reliable systems and clear understanding.',
+    'I am a computer engineer specialising in embedded systems and process automation. My work sits at the intersection of hardware and software, from programming microcontrollers and sensor networks with Arduino and Raspberry Pi to designing end-to-end RPA workflows with Zapier, n8n and Make.com that eliminate repetitive manual work. I also build full-stack web applications with Next.js and Node.js, and manage the databases that keep everything connected. As a Graduate Fellow (Lecturer) at Busitema University I lecture courses in database systems, operating systems, microprocessors and embedded programming, bringing real-world engineering practice into the classroom. Whether I am wiring up a circuit, writing an API integration or walking students through a lab session, the goal is the same: reliable systems and clear understanding.',
   location: 'Njeru, Uganda',
   email: 'okelloericdenis@gmail.com',
   currentRole: 'Graduate Fellow (Lecturer)',
@@ -66,7 +66,7 @@ export const Projects: Project[] = [
     slug: 'ctn-pastor-training',
     title: 'CTN Pastor Training',
     description:
-      'A coordination platform for pastor-training organisations operating across Uganda, Ethiopia and Kenya — built to streamline mission logistics and outreach.',
+      'A coordination platform for pastor-training organisations operating across Uganda, Ethiopia and Kenya, built to streamline mission logistics and outreach.',
     image: '/works/ctn2.png',
     imagePosition: 'right 20%',
     url: 'https://ctnpastortraining.org/',
@@ -91,7 +91,7 @@ export const Projects: Project[] = [
     slug: 'bonaire-weather',
     title: 'Bonaire Weather',
     description:
-      'Automated weather forecasting site powered by the OpenWeather API, Robomotion RPA and Replicate AI — publishes daily forecasts without manual intervention.',
+      'Automated weather forecasting site powered by the OpenWeather API, Robomotion RPA and Replicate AI that publishes daily forecasts without manual intervention.',
     image: '/works/weather.png',
     url: 'https://www.stijlvoldesign.nl/forecast/day-2/',
   },

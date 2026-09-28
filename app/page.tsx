@@ -8,6 +8,9 @@ import {
   FiDatabase,
   FiUsers,
   FiSmartphone,
+  FiShield,
+  FiLayers,
+  FiWifi,
 } from 'react-icons/fi'
 import { Container } from '@/components/ui/container'
 import { Button } from '@/components/ui/button'
@@ -28,7 +31,7 @@ const services = [
     icon: FiCpu,
     title: 'Embedded Systems & IoT',
     description:
-      'Programming microcontrollers and sensor networks with Arduino and Raspberry Pi — from circuit design to working prototypes.',
+      'Programming microcontrollers and sensor networks with Arduino and Raspberry Pi, from circuit design to working prototypes.',
     image: '/services/embedded.jpg',
   },
   {
@@ -42,7 +45,7 @@ const services = [
     icon: FiCode,
     title: 'Web Development',
     description:
-      'Full-stack applications built with Next.js, React and Node.js — from landing pages to complex platforms with API integrations.',
+      'Full-stack applications built with Next.js, React and Node.js, from landing pages to complex platforms with API integrations.',
     image: '/services/webdev.jpg',
   },
   {
@@ -209,6 +212,65 @@ export default function HomePage() {
                     {service.description}
                   </p>
                 </div>
+              </Card>
+            </FadeIn>
+          ))}
+        </div>
+      </Container>
+
+      <Container className="flex flex-col gap-8 py-16">
+        <FadeIn>
+          <div>
+            <span className="font-mono text-sm uppercase tracking-widest text-[var(--color-accent)]">
+              Research
+            </span>
+            <h2
+              className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl"
+              style={{ fontVariantCaps: 'small-caps' }}
+            >
+              Research interests
+            </h2>
+          </div>
+        </FadeIn>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            {
+              icon: FiShield,
+              title: 'Embedded Systems for Road Safety',
+              description:
+                'Sensor-based systems for hazard detection, speed monitoring and driver alertness using microcontrollers and IoT.',
+            },
+            {
+              icon: FiLayers,
+              title: 'Cyber-Physical Systems',
+              description:
+                'Tightly coupled computational and physical systems where software interacts directly with hardware in real time.',
+            },
+            {
+              icon: FiCpu,
+              title: 'Hardware Programming & Firmware',
+              description:
+                'Low-level firmware development for microcontrollers, peripheral interfacing and rapid hardware prototyping.',
+            },
+            {
+              icon: FiWifi,
+              title: 'IoT & Sensor Networks',
+              description:
+                'Networked embedded devices for environmental monitoring, smart infrastructure and real-time data acquisition.',
+            },
+          ].map((area, index) => (
+            <FadeIn key={area.title} delay={index * 0.06}>
+              <Card className="flex h-full flex-col gap-3 p-5">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-accent)]/10">
+                  <area.icon
+                    size={18}
+                    className="text-[var(--color-accent)]"
+                  />
+                </div>
+                <h3 className="text-sm font-semibold">{area.title}</h3>
+                <p className="text-xs leading-relaxed text-[var(--color-fg-muted)]">
+                  {area.description}
+                </p>
               </Card>
             </FadeIn>
           ))}

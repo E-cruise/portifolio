@@ -7,11 +7,11 @@ export const Person = {
   name: 'Okello Eric Denis',
   shortName: 'Okello Eric',
   alias: 'E_Cruise',
-  role: 'Computer Engineer',
+  role: 'Computer Engineer & Tutor',
   tagline:
-    'Computer engineer working across embedded systems, robotics, automation and software.',
+    'I design embedded systems and build automation workflows that bridge hardware, software and data — then teach others how to do the same.',
   summary:
-    'I am a self-motivated, adaptable computer engineer who enjoys finding reliable solutions to real engineering problems, across robotic process automation, software development, embedded systems and hardware programming, database management, and machine learning. I build and maintain systems that bring hardware, software and data together, working with technical teams and end users alike. Most of my work has been collaborative: delivering projects alongside other engineers and handing finished systems over to the teams who run them day to day.',
+    'I am a computer engineer specialising in embedded systems and process automation. My work sits at the intersection of hardware and software — from programming microcontrollers and sensor networks with Arduino and Raspberry Pi, to designing end-to-end RPA workflows with Zapier, n8n and Make.com that eliminate repetitive manual work. I also build full-stack web applications with Next.js and Node.js, and manage the databases that keep everything connected. As a Graduate Fellow at Busitema University I lecture courses in database systems, operating systems, microprocessors and embedded programming — bringing real-world engineering practice into the classroom. Whether I am wiring up a circuit, writing an API integration or walking students through a lab session, the goal is the same: reliable systems and clear understanding.',
   location: 'Njeru, Uganda',
   email: 'okelloericdenis@gmail.com',
   currentRole: 'Graduate Fellow (Lecturer)',
@@ -66,7 +66,7 @@ export const Projects: Project[] = [
     slug: 'ctn-pastor-training',
     title: 'CTN Pastor Training',
     description:
-      'A website for coordinating the pastoral mission work of different pastor-training missionary organisations across Uganda, Ethiopia and Kenya.',
+      'A coordination platform for pastor-training organisations operating across Uganda, Ethiopia and Kenya — built to streamline mission logistics and outreach.',
     image: '/works/ctn2.png',
     imagePosition: 'right 20%',
     url: 'https://ctnpastortraining.org/',
@@ -75,7 +75,7 @@ export const Projects: Project[] = [
     slug: 'ncbs',
     title: 'Nile Centre Business Support',
     description:
-      "Designed the NCBS website, which portrays what NCBS does: training remote workers.",
+      'Corporate website for NCBS, showcasing their remote-worker training programmes and business support services.',
     image: '/works/ncbs.png',
     url: 'https://ncbs.io',
   },
@@ -83,7 +83,7 @@ export const Projects: Project[] = [
     slug: 'nyumba-app',
     title: 'Nyumba App',
     description:
-      'A real estate mobile app — designed the front end using React Native with TypeScript.',
+      'A cross-platform real estate mobile app built with React Native and TypeScript for browsing and listing properties.',
     image: '/works/nyumba.png',
     imagePosition: 'right 20%',
   },
@@ -91,7 +91,7 @@ export const Projects: Project[] = [
     slug: 'bonaire-weather',
     title: 'Bonaire Weather',
     description:
-      'A weather forecasting website with automatic posting using the OpenWeather API, Robomotion RPA and Replicate AI.',
+      'Automated weather forecasting site powered by the OpenWeather API, Robomotion RPA and Replicate AI — publishes daily forecasts without manual intervention.',
     image: '/works/weather.png',
     url: 'https://www.stijlvoldesign.nl/forecast/day-2/',
   },

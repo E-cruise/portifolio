@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { FiMapPin, FiBriefcase, FiBook, FiCpu } from 'react-icons/fi'
 import { Container } from '@/components/ui/container'
 import { SectionHeading } from '@/components/ui/section-heading'
 import { Card } from '@/components/ui/card'
@@ -16,15 +17,100 @@ export const metadata: Metadata = {
   description: Person.summary,
 }
 
+const highlights = [
+  {
+    icon: FiBriefcase,
+    label: 'Current Role',
+    value: `${Person.currentRole}`,
+    sub: Person.currentCompany,
+  },
+  {
+    icon: FiMapPin,
+    label: 'Location',
+    value: Person.location,
+  },
+  {
+    icon: FiCpu,
+    label: 'Core Focus',
+    value: 'Embedded Systems & Automation',
+  },
+  {
+    icon: FiBook,
+    label: 'Education',
+    value: 'MSc Cyber-Physical Systems',
+    sub: 'BSc Computer Engineering',
+  },
+]
+
 export default function AboutPage() {
+  const yearsExperience = new Date().getFullYear() - Person.professionalSince
+
   return (
     <Container className="flex flex-col gap-16 py-16 sm:py-24">
-      <FadeIn className="flex flex-col gap-6">
-        <SectionHeading eyebrow="About" title="About me." />
-        <p className="max-w-2xl text-[var(--color-fg-muted)]">
-          {Person.summary}
-        </p>
-      </FadeIn>
+      <div className="grid gap-10 lg:grid-cols-5 lg:gap-16">
+        <FadeIn className="flex flex-col gap-6 lg:col-span-3">
+          <SectionHeading eyebrow="About" title="About me." />
+          <div className="flex flex-col gap-4 text-[var(--color-fg-muted)]">
+            <p>
+              I am a computer engineer specialising in embedded systems and
+              process automation. My work sits at the intersection of hardware
+              and software — from programming microcontrollers and sensor
+              networks with Arduino and Raspberry Pi, to designing end-to-end
+              RPA workflows with Zapier, n8n and Make.com that eliminate
+              repetitive manual work.
+            </p>
+            <p>
+              I also build full-stack web applications with Next.js and
+              Node.js, and manage the databases that keep everything connected.
+              As a Graduate Fellow at Busitema University I lecture courses in
+              database systems, operating systems, microprocessors and embedded
+              programming — bringing real-world engineering practice into the
+              classroom.
+            </p>
+            <p>
+              Whether I am wiring up a circuit, writing an API integration or
+              walking students through a lab session, the goal is the same:
+              reliable systems and clear understanding.
+            </p>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.1} className="flex flex-col lg:col-span-2">
+          <Card className="flex h-full flex-col justify-between p-6">
+            <div className="mb-4 flex items-baseline justify-between">
+              <span className="font-mono text-xs uppercase tracking-widest text-[var(--color-accent)]">
+                At a glance
+              </span>
+              <span className="text-2xl font-bold text-[var(--color-accent)]">
+                {yearsExperience}+ yrs
+              </span>
+            </div>
+            <div className="flex flex-col gap-5">
+              {highlights.map((item) => (
+                <div key={item.label} className="flex items-start gap-3">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--color-accent)]/10">
+                    <item.icon
+                      size={18}
+                      className="text-[var(--color-accent)]"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-[var(--color-fg-muted)]">
+                      {item.label}
+                    </p>
+                    <p className="text-sm font-medium">{item.value}</p>
+                    {item.sub && (
+                      <p className="text-xs text-[var(--color-fg-muted)]">
+                        {item.sub}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Card>
+        </FadeIn>
+      </div>
 
       <FadeIn className="flex flex-col gap-6">
         <h2
@@ -71,7 +157,7 @@ export default function AboutPage() {
         >
           Skills
         </h2>
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SkillCategoryOrder.map((category) => (
             <Card key={category} className="p-6">
               <h3 className="mb-4 font-mono text-xs uppercase tracking-widest text-[var(--color-accent)]">

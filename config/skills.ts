@@ -87,11 +87,11 @@ export const Skills: Record<SkillCategory, Skill[]> = {
 }
 
 export const SkillCategoryOrder: SkillCategory[] = [
+  'embedded',
   'automation',
   'webDev',
   'languages',
   'database',
-  'embedded',
   'mobile',
   'productivity',
 ]

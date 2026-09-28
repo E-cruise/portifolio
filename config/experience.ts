@@ -17,6 +17,7 @@ export type CompanyDetail = {
   logo: {
     light: string
     dark: string
+    circle?: string
   }
   roles: string[]
 }
@@ -34,6 +35,7 @@ export const Experiences: {
     logo: {
       light: '/worked_at_logos/busitema/busitema.png',
       dark: '/worked_at_logos/busitema/busitema.png',
+      circle: '/worked_at_logos/busitema/busitema-circle.png',
     },
     roles: [
       'Lecture undergraduate course units in Database Systems, Database Management Systems, Operating Systems, Microprocessors & Interfacing, and Electricity and Magnetism.',

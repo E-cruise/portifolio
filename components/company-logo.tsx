@@ -8,16 +8,19 @@ export function CompanyLogo({
   name,
   light,
   dark,
+  circle,
   variant = 'full',
 }: {
   name: string
   light: string
   dark: string
+  circle?: string
   variant?: 'full' | 'circle'
 }) {
   const [failed, setFailed] = useState(false)
   const { resolvedTheme } = useTheme()
-  const src = resolvedTheme === 'light' ? light : dark
+  const themeSrc = resolvedTheme === 'light' ? light : dark
+  const src = variant === 'circle' && circle ? circle : themeSrc
 
   if (failed) {
     const initials = name
